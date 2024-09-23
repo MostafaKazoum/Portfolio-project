@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neal Elliott</title>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/37c29caf4e.js" crossorigin="anonymous"></script>
+
+    <!-- League Spartan font -->
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <h2><a href="index.html">Neal Elliott</a></h2>
+            <div class="list-btn">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+            <div class="nav-list">
+                <div class="overlay hide"></div>
+                <div class="close hide">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <ul>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact-me">contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="details">
+                <h3 class="greeting">Hello!, I am</h3>
+                <h1 class="name">Neal Elliott</h1>
+                <h2 class="job">I am a <span>Fullstack web Devoloper</span></h2>
+                
+                <div class="skills">
+                    <span>skills :</span>
+                    <span class="lang">
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-js"></i>
+                        <i class="fa-brands fa-react"></i>
+                        <i class="fa-brands fa-node"></i>
+                        <i class="fa-brands fa-vuejs"></i>
+                    </span>
+                </div>
+                <button class="contact-btn">contact me</button>
+            </div>
+            <div class="img">
+                <img src="https://media.istockphoto.com/id/1171169127/photo/headshot-of-cheerful-handsome-man-with-trendy-haircut-and-eyeglasses-isolated-on-gray.jpg?s=612x612&w=0&k=20&c=yqAKmCqnpP_T8M8I5VTKxecri1xutkXH7zfybnwVWPQ=" >
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="about-me" class="about-me">
+            <div class="holder">
+                <div class="info">
+                    <h1>why hire me ?</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ea voluptatum voluptate distinctio ullam quibusdam et recusandae est doloremque velit.</p>
+                </div>
+                <div class="slider">
+                    <div class="list">
+                        <div class="item" style="--position: 1;" ><img src="images/tp204-certificate-02.jpg" alt=""></div>
+                        <div class="item" style="--position: 2;" ><img src="images/tp204-certificate-05.jpg" alt=""></div>
+                        <div class="item" style="--position: 3;" ><img src="images/tp204-certificate-10.jpg" alt=""></div>
+                        <div class="item" style="--position: 4;" ><img src="images/tp204-certificate-13.jpg" alt=""></div>
+                        <div class="item" style="--position: 5;" ><img src="images/tp204-certificate-20.jpg" alt=""></div>
+                        <div class="item" style="--position: 6;" ><img src="images/tp204-certificate-20.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects">
+            <h1 class="title">My Works</h1>
+            <div class="projects-constainer">
+                <div class="project">
+                    <div class="image">
+                        <img src="images/e-commerc.png" alt="">
+                    </div>
+                    <div class="desc">
+                        <h2>E-commerce page</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi omnis velit magni odio veritatis illum?</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="image">
+                        <img src="images/finances.png" alt="">
+                    </div>
+                    <div class="desc">
+                        <h2>finances app</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi omnis velit magni odio veritatis illum?</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="image">
+                        <img src="images/tint-ecommerc-page.png" alt="">
+                    </div>
+                    <div class="desc">
+                        <h2>tent selling e-commerce page</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi omnis velit magni odio veritatis illum?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact-me" class="contact-me">
+            <h1>contact me</h1>
+            <button><i class="fa-regular fa-copy"></i> Copy email</button>
+            <div class="media">
+                <h4>socials</h4>
+                <div class="socials">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-linkedin"></i>    
+                </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <h2>Crafting innovative solutions with passion and precision — Neal Elliot.</h2>
+        <p>© 2024 Neal Elliot. All rights reserved.</p>
+    </footer>
+    <script>
+        const nav = document.querySelector('.nav-list');
+        const btn = document.querySelector('.list-btn');
+        const closebtn = document.querySelector(".close");
+        btn.onclick = ()=>{
+            nav.classList.toggle("show");
+            closebtn.style.display="unset";
+            document.querySelector(".overlay").style.display="unset";
+
+        }
+        closebtn.onclick = ()=>{
+            nav.classList.toggle("show");
+            closebtn.style.display="none";
+            document.querySelector(".overlay").style.display="none";
+        }
+    </script>
+
+</body>
+</html>
