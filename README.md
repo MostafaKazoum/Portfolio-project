@@ -1,1 +1,1 @@
-to view the website live, click [here](https://neal-elliott.static.domains/)
+to view the website live, click [here](https://mostafakazoum.github.io/Portfolio-project/)
