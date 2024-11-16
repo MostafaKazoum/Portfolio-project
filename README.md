@@ -1,1 +1,1 @@
-to view the website live, click [here](https://mostafakazoum.github.io/Portfolio-project/)
+to view the website live, click [here](https://mostafakazoum.github.io/Portfolio-project/protfolio/index.html)
